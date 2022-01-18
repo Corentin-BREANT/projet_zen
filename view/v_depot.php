@@ -10,19 +10,35 @@
 </head>
 
 <body>
-    <span class="titre titre"> Depot </span>
     <nav>
-        <div id="zen">
+        <div class="fond depot-fond">
+            <div id="zen">
             <img src="public/images/zen.png" alt="Zen">
+            </div>
         </div>
         <div>
-        <h1>Espace dépôt</h1>
-        <hr>
+        <span class="titre dépot">ESPACE DÉPÔT</span>
+        <hr id="lignedepot"> 
             <nav>
                 <div>
                 <span> Examen/concours - Bac technologique </span>
                 <button>Déposer</button>
+                <br>
+
+                <span> Examen/concours - Bac Général </span>
+                <button>Déposer</button>
+                <br>
+
+                <span> Examen/concours - Épreuves Anticipées </span>
+                <button>Déposer</button>
+                <br>
+
+
+                <span> Examen/concours - Bac Professionnel </span>
+                <button>Déposer</button>
                 </div>
+
+
             </nav>
         </div>
     </nav>
