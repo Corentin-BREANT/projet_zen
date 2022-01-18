@@ -1,5 +1,3 @@
-# projet_zen
-
 Zen : Zone d'Echange Numérique
 ================================
 
