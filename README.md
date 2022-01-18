@@ -19,4 +19,6 @@ Le dossiers view contient les fichiers des pages du site internet
 
 Le dossier style contient la mise en forme du site internet
 
+## Model
 
+Pour la connection à la base de données zen
