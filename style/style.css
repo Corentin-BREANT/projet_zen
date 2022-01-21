@@ -16,15 +16,21 @@ html, body {
 
 #zen > img{
   margin-top: 10px;
-  margin-left: 12.5px;
-  width: 150px;
-  height: 150px;
+  padding-left: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 .fond{
   
-  width: 200px ;
+  width: 120px ;
   height: 750px ;
+}
+
+.fond-2{
+  margin-left: 20px;
+  width: 1700px;
+  height: auto;
 }
 
 .depot-fond{
@@ -56,6 +62,13 @@ html, body {
   font-style: italic;
 }
 
+#texte{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
 .dépot{
   color: #81D0E4;
   font-size: 25px;
@@ -80,6 +93,13 @@ html, body {
 
 }
 
+.depottexte{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#81D0E4;
+  background-color: lightgray;
+  font-size: auto;
+  font-weight: initial;
+}
 
 .blocMain {
   min-height: 50vh;
@@ -127,4 +147,12 @@ input {
   width: 1725px;
   height: 3px;
 }
-  
+
+.boutons{
+  border-width: 3px;
+  border-style:solid;
+  border-color: #000000;
+}
+.depots{
+  margin-left: 1275px;
+}  
