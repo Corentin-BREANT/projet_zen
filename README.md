@@ -1,22 +1,18 @@
-Zen : Zone d'Echange Numérique
-================================
+# ZEN : Zone d'Echange Numérique
 
-Zen est un projet qui est une page web regroupant le dépot ainsi que la récupération de fichiers de diplômes pour les académie 
+ZEN est un projet qui est une page web regroupant le dépot ainsi que la récupération de fichiers de diplômes pour les académies.
 
-Index.php
-==============================
+# Index.php
 
-Le fichier ``index.php`` est le super controlleur du site internet, c'est sur cette page qu'on se redirigie peu importe les besoins de cette manière :
-``Localhost/zen/projet_zen/index.php``
+Le fichier ``index.php`` est le super contrôleur du site web, c'est sur cette page qu'on se redirige peu importe les besoins de cette manière :
 
-## View
+``http://127.0.0.1/index.php?route=<ROUTE_DEMANDEE>``
 
-Le dossiers view contient les fichiers des pages du site internet
+# Pages
+Le dossier ``pages`` contient les fichiers des pages du site web.
 
-## Style
+# Public
+Le dossier ``public`` regroupe les éléments relatifs à la mise en forme et aux interactions du site web. Il s'agit dans ce cas de CSS, d'images, de polices d'écriture et de JavaScript.
 
-Le dossier style contient la mise en forme du site internet
-
-## Model
-
-Pour la connection à la base de données zen
+# Models
+Le dossier ``models`` contient les fichiers relatifs à la connexion et aux requêtes de la base de données.

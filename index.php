@@ -1,36 +1,27 @@
 <?php
-require("Include/config.php");
-require_once("model/sqlConnect.php");
-include("view/v_header.php");
-require('controler/controleur.php');
+require_once("include/config.php");
+require_once("controller/controller.php");
 
+if (isset($_REQUEST["route"]))
+     $route = $_REQUEST["route"];
 
-if(!isset($_REQUEST['uc']))
-     $uc = 'accueil';
-else
-	$uc = $_REQUEST['uc'];
-
- 
-switch($uc)
-{
-     case "accueil":
-           Accueil();
+// À chaque route on associe une page.
+switch ($route) {
+     case "home":
+          home();
           break;
-      
-     case "depot":
-          Depot();
+
+     case "deposit":
+          deposit();
           break;
-		  
-	case "retrait":
-          retrait();
+
+     case "withdraw":
+          withdraw();
+          break;
+
+     // Si la route ne correspond à aucune
+     // page, on affiche une erreur 404.
+     default:
+          not_found();
           break;
 }
-include("view/v_footer.php") ;
-?>  
-
-
-
-
-
-
- 
