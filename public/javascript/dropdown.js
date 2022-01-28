@@ -7,20 +7,27 @@
 function dropdownHandler(index) {
     // Si un dropdown est encore visible, on l'efface avant
     // d'en afficher un autre.
+    const exchangeZone = document.querySelector(`#exchange-zone-${index}`),
+        isDisplayed = exchangeZone.classList.contains('show')
 
     clearDropdowns()
 
-    document.querySelector(`#dropdown-${index}`).classList.toggle('show')
+    // Permet d'afficher la zone d'échange si et seulement
+    // si elle n'était pas déjà affichée. Sinon, elle disparait.
+    if (!isDisplayed)
+        document
+            .querySelector(`#exchange-zone-${index}`)
+            .classList.toggle('show')
 }
 
 function clearDropdowns() {
     // On séléctionne tous les dropdown avec la class
     // 'show' pour n'avoir que ceux qui sont affichés.
 
-    const dropdowns = document.querySelectorAll('.dropdown-content.show')
+    const elements = document.querySelectorAll('.exchange-zone.show')
 
     // On fait disparaitre le dropdown.
-    for (const openDropdown of dropdowns) openDropdown.classList.remove('show')
+    for (const e of elements) e.classList.remove('show')
 }
 
 window.onclick = function (event) {

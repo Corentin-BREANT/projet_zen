@@ -4,6 +4,8 @@
 :root {
   --deposit-background-color: hsl(240, 100%, 28%);
   --withdraw-background-color: hsl(18, 68%, 64%);
+  --background-color: #000;
+  --echange-zone-border: 3px;
 }
 
 * {
@@ -125,6 +127,29 @@ header > nav > #nav-links > a:hover {
   margin-top: 10px;
 }
 
+.exchange-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.exchange-wrapper > .container {
+  background-color: var(--background-color);
+}
+
+.exchange-zone {
+  width: calc(100% - var(--echange-zone-border) * 2);
+  height: 0;
+  border: none;
+  transition: height .5s ease-in-out;
+}
+
+.exchange-zone.show {
+  border: var(--echange-zone-border) groove var(--background-color);
+  height: 250px;
+}
+
 .container {
   color: #fff;
   display: flex;
@@ -133,7 +158,6 @@ header > nav > #nav-links > a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  margin: 20px 0;
 }
 
 .action-button {
