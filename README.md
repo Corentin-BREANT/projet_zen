@@ -14,5 +14,5 @@ Le dossier ``pages`` contient les fichiers des pages du site web.
 # Public
 Le dossier ``public`` regroupe les éléments relatifs à la mise en forme et aux interactions du site web. Il s'agit dans ce cas de CSS, d'images, de polices d'écriture et de JavaScript.
 
-# Model
+# Models
 Le dossier ``models`` contient les fichiers relatifs à la connexion et aux requêtes de la base de données.
