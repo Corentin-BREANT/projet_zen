@@ -1,0 +1,173 @@
+@import url("/public/css/dropdown.css");
+
+:root {
+  --deposit-background-color: #000091;
+  --withdraw-background-color: #e18863;
+}
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HTML & BODY */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* HEADER : */
+
+header {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 50px;
+}
+
+header > #banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+header > #banner > #logo {
+  width: 200px;
+  height: 150px;
+  margin-right: 3rem;
+}
+
+header > #banner > #slogan {
+  display: flex;
+  flex-direction: column;
+}
+
+header > nav {
+  width: 100%;
+  display: flex;
+  border-top: #ddd 1px solid;
+  justify-content: center;
+}
+
+header > nav > #nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header > nav > #nav-links > a {
+  font-size: 16px;
+  padding: 10px 50px;
+  margin: 0px 10px;
+  color: #000;
+}
+
+header > nav > #nav-links > a:hover {
+  background-color: #f0f0f0;
+}
+
+/* WRAPPER : */
+#wrapper {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BANNERS : */
+
+.banner {
+  width: 90%;
+  min-height: 150px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+
+.banner > span,
+.banner > h1 {
+  position: absolute;
+  color: white;
+  left: 50px;
+}
+
+.banner > span {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 9999px;
+  top: 25px;
+}
+
+.banner > h1 {
+  bottom: 25px;
+}
+
+/* OTHER : */
+
+#container-wrapper {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container {
+  color: white;
+  display: flex;
+  width: calc(100% - 40px);
+  min-height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.action-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.title {
+  color: #000;
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+
+.bold-title {
+  font-size: 55px;
+}
+
+.thin-title {
+  font-size: 15px;
+  font-weight: initial;
+  font-style: italic;
+}
+
+/* FOOTER : */
+
+footer {
+  display: flex;
+  position: sticky;
+  background: hsl(40, 20%, 95%);
+  width: 100%;
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  padding: 15px 0;
+  height: 50px;
+  margin-top: 25px;
+}

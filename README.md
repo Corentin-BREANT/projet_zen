@@ -1,7 +1,7 @@
 Zen : Zone d'Echange Numérique
 ================================
 
-Zen est un projet qui est une page web regroupant le dépot ainsi que la récupération de fichiers de diplômes pour les académie 
+Zen est un projet qui est une page web regroupant le deposit ainsi que la récupération de fichiers de diplômes pour les académie 
 
 Index.php
 ==============================

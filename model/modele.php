@@ -1,14 +1,14 @@
 <?php
-function getMusiciens() {
 
-// Récupération des données
-require_once("sqlConnect.php");	//connexion base de données
-$bdd = getBDD();
+require_once("sqlConnect.php"); //connexion base de données
 
-$req = $bdd->query('SELECT * FROM festival');
+function getMusiciens()
+{
 
-return $req; 
+    // Récupération des données
+    $bdd = getBDD();
 
+    $req = $bdd->query("SELECT * FROM festival");
+
+    return $req;
 }
-
-?>
