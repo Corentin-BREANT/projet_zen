@@ -1,3 +1,4 @@
+@import url("/public/fonts/Marianne/font.css");
 @import url("/public/css/dropdown.css");
 
 :root {
@@ -10,7 +11,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Marianne", Arial, Helvetica, sans-serif;
 }
 
 /* HTML & BODY */
@@ -69,6 +70,7 @@ header > nav > #nav-links > a {
   padding: 10px 50px;
   margin: 0px 10px;
   color: #000;
+  text-decoration: none;
 }
 
 header > nav > #nav-links > a:hover {
@@ -116,7 +118,7 @@ header > nav > #nav-links > a:hover {
   bottom: 25px;
 }
 
-/* OTHER : */
+/* COMPONENTS : */
 
 #container-wrapper {
   width: 100%;
@@ -156,6 +158,14 @@ header > nav > #nav-links > a:hover {
   font-size: 15px;
   font-weight: initial;
   font-style: italic;
+}
+
+a {
+  color: var(--deposit-background-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 }
 
 /* FOOTER : */
