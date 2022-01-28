@@ -2,9 +2,8 @@
 require_once("include/config.php");
 require_once("controller/controller.php");
 
-if (isset($_REQUEST['route']))
-     $route = $_REQUEST['route'];
-
+if (isset($_REQUEST["route"]))
+     $route = $_REQUEST["route"];
 
 // À chaque route on associe une page.
 switch ($route) {

@@ -1,7 +1,7 @@
 <?php
 
 // Connexion base de données.
-require_once("sqlConnect.php");
+require_once("sql_connect.php");
 
 function getMusiciens()
 {
