@@ -2,8 +2,8 @@
 @import url("/public/css/dropdown.css");
 
 :root {
-  --deposit-background-color: #000091;
-  --withdraw-background-color: #e18863;
+  --deposit-background-color: hsl(240, 100%, 28%);
+  --withdraw-background-color: hsl(18, 68%, 64%);
 }
 
 * {
@@ -30,7 +30,7 @@ header {
   min-height: 150px;
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: hsla(240, 5%, 41%, 0.2) 0px 7px 29px 0px;
   margin-bottom: 50px;
 }
 
@@ -55,7 +55,7 @@ header > #banner > #slogan {
 header > nav {
   width: 100%;
   display: flex;
-  border-top: #ddd 1px solid;
+  border-top: hsl(0, 0%, 87%) 1px solid;
   justify-content: center;
 }
 
@@ -74,7 +74,7 @@ header > nav > #nav-links > a {
 }
 
 header > nav > #nav-links > a:hover {
-  background-color: #f0f0f0;
+  background-color: hsl(0, 0%, 94%);
 }
 
 /* WRAPPER : */
@@ -96,20 +96,20 @@ header > nav > #nav-links > a:hover {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  color: white;
+  color: #fff;
   position: relative;
 }
 
 .banner > span,
 .banner > h1 {
   position: absolute;
-  color: white;
+  color: #fff;
   left: 50px;
 }
 
 .banner > span {
   padding: 10px 20px;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 9999px;
   top: 25px;
 }
@@ -126,7 +126,7 @@ header > nav > #nav-links > a:hover {
 }
 
 .container {
-  color: white;
+  color: #fff;
   display: flex;
   width: calc(100% - 40px);
   min-height: 75px;
@@ -138,7 +138,7 @@ header > nav > #nav-links > a:hover {
 
 .action-button {
   background-color: transparent;
-  color: white;
+  color: #fff;
   border: none;
   font-size: 22px;
   font-weight: bold;
