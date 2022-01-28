@@ -2,14 +2,19 @@
 
 function getBdd()
 {
+    $host = "mysql:host=localhost;dbname=festival;charset=utf8";
+    $username = "festival";
+    $password = "secret";
+
     try {
-        $dsn = "mysql:host=localhost;dbname=festival;charset=utf8";
-        $utilisateur = "festival";
-        $motDePasse = "secret";
-        $connexion = new PDO($dsn, $utilisateur, $motDePasse);
-        return $connexion;
+        // On essaie de se connecter à la base de données ...
+
+        $conn = new PDO($host, $username, $password);
+        return $conn;
     } catch (Exception $e) {
-        echo $dsn . "<br>";
+        // S'il y a une erreur, on la renvoie sur la page.
+
+        echo $host . "<br>";
         echo "Connexion à MySQL impossible : " . $e->getMessage();
         die();
     }

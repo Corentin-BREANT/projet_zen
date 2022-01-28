@@ -1,6 +1,6 @@
 <header>
     <div id="banner">
-        <img id="logo" src="public/images/logo.png" alt="Logo">
+        <img id="logo" src="/public/images/logo.png" alt="Logo">
         <div id="slogan">
             <span class="title bold-title">ZEN</span>
             <span class="title">Zone d'Echange Numérique</span>

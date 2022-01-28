@@ -1,11 +1,12 @@
 <?php
 
-require_once("sqlConnect.php"); //connexion base de données
+// Connexion base de données.
+require_once("sqlConnect.php");
 
 function getMusiciens()
 {
+    // Récupération des données.
 
-    // Récupération des données
     $bdd = getBDD();
 
     $req = $bdd->query("SELECT * FROM festival");

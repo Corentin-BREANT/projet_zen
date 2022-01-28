@@ -4,6 +4,10 @@
 
 <div id="container-wrapper">
     <?php
+    // Pour chaque type d'épreuve/concours, on ajoute un
+    // nouvel élément permettant l'accès à l'espace
+    // d'échange.
+
     foreach ($typesEpreuves as $index => $type) { ?>
         <div class="container" style="background-color: var(--withdraw-background-color);">
             <h3>Examen/concours - <?php echo "$type"; ?></h3>

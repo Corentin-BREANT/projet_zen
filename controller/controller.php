@@ -1,5 +1,7 @@
 <?php
-require_once("model/modele.php");
+
+// Ces fonctions sont chargées de récupérer le code PHP
+// des pages disponibles pour ensuite les rendre au client.
 
 function home()
 {

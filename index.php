@@ -6,6 +6,7 @@ if (isset($_REQUEST['route']))
      $route = $_REQUEST['route'];
 
 
+// À chaque route on associe une page.
 switch ($route) {
      case "home":
           home();
@@ -19,6 +20,8 @@ switch ($route) {
           withdraw();
           break;
 
+     // Si la route ne correspond à aucune
+     // page, on affiche une erreur 404.
      default:
           not_found();
           break;
