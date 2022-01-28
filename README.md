@@ -11,8 +11,8 @@ Le fichier ``index.php`` est le super contrôleur du site web, c'est sur cette p
 # Pages
 Le dossier ``pages`` contient les fichiers des pages du site web.
 
-# Assets
-Le dossier ``assets`` regroupe les éléments relatifs à la mise en forme et aux interactions du site web. Il s'agit dans ce cas de CSS, d'images, de polices d'écriture et de JavaScript.
+# Public
+Le dossier ``public`` regroupe les éléments relatifs à la mise en forme et aux interactions du site web. Il s'agit dans ce cas de CSS, d'images, de polices d'écriture et de JavaScript.
 
 # Model
 Le dossier ``models`` contient les fichiers relatifs à la connexion et aux requêtes de la base de données.
