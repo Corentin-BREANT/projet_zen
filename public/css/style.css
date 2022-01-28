@@ -146,7 +146,7 @@ header > nav > #nav-links > a:hover {
 }
 
 .exchange-zone.show {
-  border: var(--echange-zone-border) groove var(--background-color);
+  border: var(--echange-zone-border) solid var(--background-color);
   height: 250px;
 }
 
