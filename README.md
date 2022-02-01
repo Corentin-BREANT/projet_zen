@@ -16,3 +16,6 @@ Le dossier ``public`` regroupe les éléments relatifs à la mise en forme et au
 
 # Models
 Le dossier ``models`` contient les fichiers relatifs à la connexion et aux requêtes de la base de données.
+
+# Zen.sql
+Base de données nécessaire au bon fonctionnement des fonctionnalité que propose le projet zen
