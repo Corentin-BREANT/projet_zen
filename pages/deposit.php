@@ -18,6 +18,7 @@
         <div class="exchange-wrapper">
             <div class="container dropdown-button" onclick="dropdownHandler('<?= $index; ?>')">
                 <h3 class="dropdown-button">Examen/concours - <?= $type; ?></h3>
+                <input type="file" name="file" multiple accept=".pdf, .docx, .txt, .odt, .xlsx">
             </div>
             <div class="exchange-zone" id="exchange-zone-<?= $index; ?>">
 
